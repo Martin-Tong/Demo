@@ -8,9 +8,46 @@ body {
   height: 100%;
 }
 
-#root {height: 100%;}
+a {color: unset !important;}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#root {height: 100%;z-index: 1;}
+
+.github {
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  transform: rotateZ(45deg);
+  top: 48px;
+  right: 0px;
+  cursor: pointer;
+  background-color: white;
+  font-weight: bolder;
+  z-index: 2;
+}
+.github:hover span{
+  background: linear-gradient(to right, lightblue, pink);
+  color: transparent;
+  background-clip:text ;
+}
+.github::after, .github::before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  background:linear-gradient(to right, lightblue, pink);
+  left: 50%;
+  transition: all 1.2s ease;
+  width: 0;
+}
+.github::after {bottom: -5px;}
+.github::before {top: -5px;}
+.github:hover::after, .github:hover::before {
+  width: 100%;
+  left: 0;
 }
