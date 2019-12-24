@@ -36,3 +36,7 @@ p.homepage-header-title span {
   border: 1px solid lightgray;
   border-radius: 8px;
 }
+
+#root-welcome {
+  height: 0;
+}

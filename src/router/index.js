@@ -5,7 +5,6 @@ import '../App.css'
 //components
 import Project from "../components/demopage"
 const Home = lazy(() => import("../components/home"))
-const Welcome = lazy(() => import("../components/welcome"))
 
 export default function Entry() {
     return (
@@ -15,8 +14,7 @@ export default function Entry() {
                 <Project />
               </Route>           
               <Route path='/'>
-                <Suspense fallback={<HomeLoading />}>
-                  <Welcome />
+                <Suspense fallback={<HomeLoading />}>                 
                   <Home />
                   <App />
                 </Suspense>

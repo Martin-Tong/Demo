@@ -10,7 +10,7 @@ const {Search} = Input;
 
 export default class Home extends React.Component {
     handleSearch() {
-      axios.get('search.json').then(res=>{alert(JSON.stringify(res.data.test))})
+      axios.get('gettime.json').then(res=>{alert(JSON.stringify(res.data.date))})
       //window.fetch('search.json').then(res=>res.text()).then(ress=>{alert(ress)})
       //let xmlreq= new XMLHttpRequest()
       //xmlreq.onreadystatechange=function() {console.log(JSON.parse(JSON.stringify(xmlreq.responseText)))}

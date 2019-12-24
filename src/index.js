@@ -5,6 +5,9 @@ import App from './router';
 import * as serviceWorker from './serviceWorker';
 import tim from "./script/tim"
 
+import Welcome from './components/welcome'
+ReactDOM.render(<Welcome />, document.getElementById('root-welcome'));
+
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
