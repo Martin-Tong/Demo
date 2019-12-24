@@ -1,0 +1,50 @@
+/*首页计时mask样式*/
+.welcomeCanvas {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 888;
+    background-color: black;
+    transform-origin: 0 0;
+    transition: all 0.5s linear;
+}
+.countdownCanvas {
+    position: relative;
+    margin: 0 auto;
+    top: calc(50% - 50px);
+    left: calc(50% - 225px);
+}
+.close {
+    display: inline-block;
+    position: absolute;
+    height: 36px;
+    width: 36px;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+}
+.close::after, .close::before {
+    content: '';
+    display: inline-block;
+    height: 36px;
+    border: 1px solid white;
+    transform-origin: 50%;
+    position: absolute;
+    left: 50%;
+}
+.close::after {
+    transform: rotateZ(45deg);
+}
+.close::before {
+    transform: rotateZ(-45deg);
+}
+
+/*控制下拉首页计时mask的按钮样式*/
+.showControl {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-width: 12px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}

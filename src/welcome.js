@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import style from '../styles/countdown.module.css'
 
-import numberSix from '../number-six.png'
+import numberSix from '../../public/number-six.png'
 
 console.log(numberSix)
 
