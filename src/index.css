@@ -15,7 +15,7 @@ code {
     monospace;
 }
 
-#root {height: 100%;z-index: 1;}
+#root {height: 100%;z-index: 1;overflow: hidden;}
 
 .github {
   padding: 4px;

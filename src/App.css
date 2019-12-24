@@ -1,8 +1,9 @@
 @import '~antd/dist/antd.css';
+@import './styles/loading.css';
 
 .homepage-header {
   height: 10%;
-  padding-top: 20%;
+  padding-top: 10%;
 }
 
 p.homepage-header-title {
@@ -26,4 +27,12 @@ p.homepage-header-title span {
 }
 .homepage-content p {
   text-align: center;
+}
+
+.demopage {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  border: 1px solid lightgray;
+  border-radius: 8px;
 }

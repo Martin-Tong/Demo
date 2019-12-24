@@ -1,0 +1,49 @@
+.loading-mask {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+}
+
+.global-loading {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    left: calc(50% - 45px);
+    top: calc(50% - 45px);
+    animation: rotate 2.0s infinite linear;
+}
+.global-loading div {
+    background-color: #1890ff;
+    width: 60%;
+    height: 60%;
+    border-radius: 100%;
+    position: absolute;
+    display: inline-block;
+    animation: scale 2.0s infinite ease-in-out;
+}
+.global-loading div:nth-child(1) {
+    top: 0;
+}
+.global-loading div:nth-child(2) {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1.0s;
+}
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes scale {
+    0%, 100% {transform:scale(0)}
+    50% {transform: scale(1)}
+}
