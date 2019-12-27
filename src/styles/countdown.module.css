@@ -39,6 +39,34 @@
     transform: rotateZ(-45deg);
 }
 
+/*时分秒及其他描述*/
+.description {
+    position: absolute;
+    width: 560px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    text-align: center;
+    user-select: none;
+}
+.description span {
+    font-weight: bold;
+    font-size: larger;
+    display: inline-block;
+}
+.hms {
+    position: absolute;
+    bottom: 0;
+}
+.h {
+    width: 230px;
+}
+.m, .s {
+    width: 160px;
+}
+
 /*控制下拉首页计时mask的按钮样式*/
 .showControl {
     display: inline-block;
@@ -48,3 +76,11 @@
     border-style: solid;
     border-color: black transparent transparent transparent;
 }
+
+/*
+<div id="loading">
+<div class="loading-logo" style="background-image: url(&quot;//activity.hdslb.com/ptjs/cross-year-pc-2019/prod/asserts/loading-logo.png&quot;);"></div>
+<div class="num-tick"><div class="num-one" style="background-image: url(&quot;//activity.hdslb.com/ptjs/cross-year-pc-2019/prod/asserts/number-ten.png&quot;); transform: translateY(-990px);"></div>
+<div class="num-two" style="background-image: url(&quot;//activity.hdslb.com/ptjs/cross-year-pc-2019/prod/asserts/number-ten.png&quot;); transform: translateY(-916.667px);"></div>
+</div><div class="loading"><div id="progress" style="width: 98.3333%;"></div></div></div>
+*/
