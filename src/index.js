@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './router';
 import * as serviceWorker from './serviceWorker';
-import tim from "./script/tim"
+//import tim from "./script/tim"
+
+//import {pixiObject} from './components/welcome'
 
 import Welcome from './components/welcome'
 ReactDOM.render(<Welcome />, document.getElementById('root-welcome'));
@@ -17,5 +19,8 @@ serviceWorker.unregister();
 
 window.onload = function() {
     let ele = document.querySelector('.loading-mask');
-    ele.style.visibility = 'hidden'
+    ele.style.opacity = 0
+    ele.style.display = 'none'
+    //pixiObject.initial()
+    //pixiObject.startMoving()
 }

@@ -6,6 +6,7 @@
     bottom: 0;
     right: 0;
     background-color: white;
+    transition: all 0.5s ease-out;
 }
 
 .global-loading {

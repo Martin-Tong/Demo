@@ -16,7 +16,6 @@ export default function Entry() {
               <Route path='/'>
                 <Suspense fallback={<HomeLoading />}>                 
                   <Home />
-                  <App />
                 </Suspense>
               </Route>
             </Switch>
